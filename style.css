@@ -1,0 +1,303 @@
+body{
+    margin:0;
+    font-size:14;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+
+   
+    height: 100vh;
+
+   
+    
+
+}
+
+
+.title-bar{
+    height:5vh;
+    background-color: #108444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+.menu-bar{
+    height: 5vh;
+    display: flex;
+    background-color: #108444;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size:18;
+    margin-left: 5px;
+    margin-right: 5px;
+    width:55px;
+}
+
+.menu-item.selected{
+    background-color: #fff;
+    color: #108444;
+    
+    
+}
+
+
+.menu-item:hover{
+    background-color: #1c6c40;
+    cursor: pointer;
+}
+
+.menu-item.selected:hover{
+    background-color: #fff;
+    color: #108444;
+    cursor: default;
+}
+
+
+.menu-icon-bar{
+    height: 6vh;
+     background-color: rgb(244, 241, 241);
+     display: flex;
+     align-items: center;
+     
+
+}
+
+.menu-icons{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+   
+    /* margin-top: .6rem; */
+    
+    
+}
+
+
+
+.font-family-selector{
+    height: 25px;
+    font-size: 12px;
+    width:150px;
+}
+
+.font-size-selector{
+    height: 25px;
+    font-size: 12px;
+    /* width:150px; */
+}
+
+.selector option{
+    font-size: 12px;
+}
+
+.menu-icons:hover{
+    background-color: rgb(223, 222, 222);
+    cursor:pointer;
+}
+
+.formula-bar{
+    height: 5vh;
+    /* background-color: #108444; */
+
+    display: flex;
+    align-items: center;
+   
+    background-color: rgb(223, 222, 222);
+}
+
+
+.selected-cell{
+    height: 70%;
+    width: 120px;
+    border: 1px solid lightgrey;
+    margin-right: 10px;
+    margin-left: 5px;
+    background-color: #fff;
+}
+
+.function-cell{
+    height: 70%;;
+    width: 70px;
+    border: 1px solid lightgrey;
+    margin-right: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formula-cell{
+    height: 70%;
+    width: calc(100vw - 210px);
+    border: 1px solid lightgrey;
+    background-color: #fff;
+    padding-left: .7rem;
+    padding-right: .7rem;
+    display: flex;
+    align-items: center;
+
+    outline-color: #108444;
+}
+
+
+
+.data-container{
+   
+    height: 75vh;
+    
+    display: flex;
+   flex-wrap: wrap;
+   
+
+   
+}
+
+
+.select-all{
+   width: 30px;
+   height: 30px;
+    border:1px solid lightgrey;
+}
+
+.column-name-container{
+    width: calc(100vw - 30px);
+    height: 30px;
+    border:1px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.row-name-container{
+    height: calc(75vh - 30px);
+    width: 30px;
+    border:1px solid lightgrey;
+    overflow: hidden;
+}
+
+.input-cell-container{
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border:1px solid lightgrey;
+    overflow: scroll;
+
+}
+
+
+.column-name{
+    display: flex;
+    min-width: 100px;
+    border-right: 1px solid lightgrey;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    /* flex-wrap: wrap; */
+  
+}
+
+.row-name{
+    display: flex;
+    min-height: 25px;
+    border-bottom: 1px solid lightgray;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+   
+}
+
+.sheet-bar
+{
+    height: 4vh;
+   
+   display: flex;
+   align-items: center;
+}
+
+
+.icon-add{
+    color: #108444;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+.icon-arrow-left{
+    font-size:30px;
+}
+
+.sheet-tab{
+    border-bottom: 4px solid #108444;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+
+
+.sheet-tab-container{
+    border: 1px solid lightgrey;
+    max-width: 300px;
+}
+
+
+
+.icon-arrow-left:hover, .icon-arrow-right:hover{
+    background-color: grey;
+      cursor:pointer;
+}
+
+
+.icon-add:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.sheet-tab:hover{
+    cursor: default;
+}
+
+
+
+.cell-row{
+    display: flex;
+}
+
+.input-cell{
+display: flex;
+justify-content: center;
+align-items: center;
+ min-width:100px;
+ min-height:25px;
+ border-bottom:1px solid lightgrey;
+ border-right: 1px solid lightgrey;
+ outline-color: #108444;
+}
+
+
+.menu-icons.selected{
+    background-color: lightgrey;
+}
+
+
